@@ -1,0 +1,1 @@
+# Sass SVG Loader Test

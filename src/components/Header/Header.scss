@@ -1,0 +1,15 @@
+@import 'src/styles/partials/test-theme';
+@import 'src/styles/partials/font-theme';
+
+.external {
+  background: #ffffff;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.test {
+  @extend .test-theme;
+}
+
+.heading {
+  @extend .font-theme;
+}

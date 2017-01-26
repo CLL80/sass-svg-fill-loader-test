@@ -1,0 +1,10 @@
+@import 'src/styles/partials/logo-theme';
+@import 'src/styles/partials/font-theme';
+
+.logo {
+  @extend .logo-theme;
+}
+
+.welcome {
+	@extend .font-theme;
+}

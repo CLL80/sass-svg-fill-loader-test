@@ -1,0 +1,11 @@
+.logo-theme {
+  background: {    
+    // image: url('styles/images-source/logo.svg');
+    image: url('styles/images-source/logo.svg?fill=#ffba34');
+    size: 100%;
+    repeat: no-repeat;
+  }
+  height: 200px;
+  width: 200px;
+  margin: 15px auto;
+}
