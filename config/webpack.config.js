@@ -138,26 +138,21 @@ const cssModulesLoader = [
 ].join('&')
 
 webpackConfig.module.loaders.push({
-  test: /\.svg$/,
-  loaders: [
-    'svg-url-loader'
-  ]
-})
-webpackConfig.module.loaders.push({
-  test: /\.svg\?fill=/,
+  test: /\.svg($|\?fill=)/,
   loaders: [
     'svg-url-loader',
     'svg-fill-loader'
   ],
   exclude: [/styles\/fonts/]
 })
+
 webpackConfig.module.loaders.push({
   test: /\.scss$|sass$/,
   loaders: [
     'style-loader',
     cssModulesLoader,
-    'resolve-url-loader',
-    // 'svg-fill-loader/encodeSharp',
+    'resolve-url-loader?keepQuery',
+    'svg-fill-loader/encodeSharp',
     'sass-loader?sourceMap'
   ]
 })
